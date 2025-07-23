@@ -1,6 +1,6 @@
 package javaclass;
 
-public class LombokMaim {
+public class LombokMain {
 
 	public static void main(String[] args) {
 		
