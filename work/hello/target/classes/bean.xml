@@ -4,7 +4,10 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
-
+	<bean id="toyota1" class="javaclass.Toyota">
+		<constructor-arg ref="toyotaEngine"></constructor-arg>
+	</bean>
+	
+	<bean id="toyota1" class="javaclass.Toyota"></bean>
 
 </beans>
