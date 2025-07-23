@@ -1,40 +1,21 @@
 package javaclass;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.EqualsAndHashCode.Exclude;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor//編譯時會幫你產生一個 沒有參數的建構子
+@AllArgsConstructor//編譯時會幫你產生一個 包含所有欄位的建構子
+@EqualsAndHashCode//單純比較兩者字元
+
+
+
 public class User {
 
-	@Override
-	public int hashCode() {
-		// TODO Auto-generated method stub
-		return super.hashCode();
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		// TODO Auto-generated method stub
-		return super.equals(obj);
-	}
-
-	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		// TODO Auto-generated method stub
-		return super.clone();
-	}
-
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-		// TODO Auto-generated method stub
-		super.finalize();
-	}
-
+	@Exclude//例外這行
 	private Long id;
 	
 	private String name;
