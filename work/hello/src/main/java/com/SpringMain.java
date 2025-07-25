@@ -18,6 +18,15 @@ public class SpringMain {
 		toyota.move();
 		System.out.println(toyota);
 
+		
+		 Toyota toyota2 = ctx.getBean("toyota2", Toyota.class);
+		 toyota2.move();
+		 System.out.println(toyota2);
+		 
+		 System.out.println("=====================");
+		 Toyota toyota3 = ctx.getBean("toyota3", Toyota.class);
+		 toyota3.move();
+		 System.out.println(toyota3);
 	}
 
 }

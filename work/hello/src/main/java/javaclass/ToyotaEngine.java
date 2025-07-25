@@ -1,5 +1,8 @@
 package javaclass;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class ToyotaEngine implements Engine {
 
 	public void start() {
