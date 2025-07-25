@@ -9,6 +9,6 @@
 		<constructor-arg ref="toyotaEngine"></constructor-arg>
 	</bean>
 	
-	<bean id="toyotaEngine" class="javaclass.BenzEngine"></bean>
+	<bean id="toyotaEngine" class="javaclass.BanzEngine"></bean>
 
 </beans>
