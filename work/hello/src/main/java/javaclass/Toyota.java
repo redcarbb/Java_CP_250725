@@ -28,8 +28,7 @@ public class Toyota /** extends ToyotaEngine */{
 
 	@Override
 	public String toString() {
-		return "Toyota [price=" + price + ", engine=" + engine + ", getClass()=" + getClass() + ", hashCode()="
-				+ hashCode() + ", toString()=" + super.toString() + "]";
+		return "Toyota [price=" + price + ", engine=" + engine + "]";
 	}
 
 }
