@@ -1,6 +1,7 @@
 package com.component;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -10,9 +11,11 @@ import javaclass.Engine;
 @Scope("prototype")
 public class Kia {
 
-	@Autowired
+	// @Autowired
+	@Qualifier(value = "toyotaEngine")
 	private Engine engine;
 
+	@Autowired
 	public Kia(Engine engine) {
 		super();
 		this.engine = engine;
