@@ -25,6 +25,7 @@ public class AnnotionMain {
 		SingletonBean sBean = SingletonBean.getInstance();
 		System.out.println(sBean);
 
+		
 		SingletonBean sBean2 = SingletonBean.getInstance();
 		System.out.println(sBean2);
 
